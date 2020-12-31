@@ -1,9 +1,10 @@
 # udemy-graphql-react-demo
-Starter project from a GraphQL course on Udemy.com
-Practice for Udemy Course https://www.udemy.com/course/graphql-with-react-course
+Based on starter project from a GraphQL course on Udemy.com
+
+https://www.udemy.com/course/graphql-with-react-course
 
 ## DB URL
-mongodb+srv://nvalentinis:<password>@cluster0.xu0hy.mongodb.net/test?retryWrites=true&w=majority
+mongodb+srv://nvalentinis:[password]@cluster0.xu0hy.mongodb.net/test?retryWrites=true&w=majority
 
 ## Libs used
     - react 15
@@ -13,7 +14,7 @@ mongodb+srv://nvalentinis:<password>@cluster0.xu0hy.mongodb.net/test?retryWrites
     - graphql-tag
 
 
-## Run prject
+## Run Project
 
     - $npm run dev
 
