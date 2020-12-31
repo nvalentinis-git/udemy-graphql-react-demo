@@ -17,15 +17,14 @@ class SongCreate extends Component {
   }
 
   onSubmit(event) {
-    console.log('form sumbit')
     event.preventDefault();
 
     // this.props.mutate is injected by graphql(react-apollo) HOC call
     this.props.mutate({
       variables: {
         title: this.state.title,
-        refetchQueries: [{ songsQuery }]
-      }
+      },
+      refetchQueries: [{ query: songsQuery }]
     })
       .then(() => {
         hashHistory.push('/');
@@ -45,7 +44,6 @@ class SongCreate extends Component {
             value={this.state.title}
             onChange={(event) => this.onChangeTitle(event)}
           />
-          <button />
         </form>
       </div>
     );
